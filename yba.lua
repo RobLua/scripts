@@ -1,2 +1,5 @@
-local a = loadstring(game:HttpGet"https://raw.githubusercontent.com/RobLua/scripts/main/gui.lua")()
-print(a)
+local newLocalScript = Instance.new("LocalScript")
+newLocalScript.Parent = game.Players.LocalPlayer.PlayerScripts
+newLocalScript.Source = [[
+    print("Этот скрипт сразу выполняется!")
+]]
