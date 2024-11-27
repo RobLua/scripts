@@ -1,5 +1,5 @@
 local m = {
     item = true
 }
-print(a)
+print(m)
 return m 
