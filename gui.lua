@@ -1,6 +1,5 @@
--- gui.lua
+local m = {
+    item = true
+}
 
--- Определяем глобальную функцию
-_G.showMessage = function(message)
-    print("[GUI]: " .. message)
-end
+return m 
