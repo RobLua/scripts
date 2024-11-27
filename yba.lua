@@ -1,14 +1,11 @@
 -- script.lua
 
--- Подключаем gui.lua с помощью loadfile
-local guiFile = loadfile("gui.lua") -- Указываем путь к gui.lua
-if guiFile then
-    guiFile() -- Выполняем gui.lua
-end
+-- Загружаем и выполняем gui.lua
+dofile("gui.lua")
 
--- Теперь используем переменные или функции, определенные в gui.lua
+-- Вызываем функцию, определенную в gui.lua
 if _G.showMessage then
-    _G.showMessage("Привет из script.lua!")
+    _G.showMessage("Это вызов из script.lua через dofile!")
 else
     print("Функция showMessage не найдена!")
 end
